@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <form action="" class="upload-img">
+            <h1>Up load hình ảnh</h1>
+            <div class="t-center">
+                <input class="link" type="text" placeholder="Link of image" autocomplete="off" spellcheck="false">
+                <input class="file" type="file" name="img" accept="image/*">
+            </div>
+            <div class="img-demo">
+                <img src="error.png" alt="ảnh minh họa" width="auto" height="auto">
+            </div>
+            <div class="select-tag">
+                <h4>Chọn thẻ</h4>
+                <input type="checkbox" name="tags" id="tag1">
+                <label class="tag-name" for="tag1">
+                    Tag
+                    <span class="tag-description">Đây là mô tả thẻ 1</span>
+                </label>
+                <input type="checkbox" name="tags" id="tag2">
+                <label class="tag-name" for="tag2">
+                    Tag 2
+                    <span class="tag-description">Đây là mô tả thẻ 2</span>
+                </label>
+            </div>
+            <input type="submit" value="Up load">
+        </form>
+        <form action="" class="all-tag">
+            <h1>Danh sách các thẻ</h1>
+            <div class="select-tag">
+                <label class="tag-name" for="tag1">
+                    Tag
+                    <span class="tag-description">Đây là mô tả thẻ 1</span>
+                </label>
+                <label class="tag-name" for="tag2">
+                    Tag 2
+                    <span class="tag-description">Đây là mô tả thẻ 2</span>
+                </label>
+            </div>
+            <div class="t-center">
+                <h3>Tạo thẻ mới</h3>
+                <input class="full-name" type="text" placeholder="Full name of tag" autocomplete="off"
+                    spellcheck="false" required>
+                <input class="description" type="text" placeholder="Description of tag" autocomplete="off"
+                    spellcheck="false" required>
+                <h4>Ảnh minh họa</h4>
+                <input class="link" type="text" placeholder="Link of image" autocomplete="off" spellcheck="false">
+                <input class="file" type="file" name="img" accept="image/*">
+                <div class="img-demo">
+                    <img src="error.png" alt="ảnh minh họa" width="auto" height="auto">
+                </div>
+            </div>
+            <input type="submit" value="Up load">
+        </form>
+    </div>
+    <script src="./admin.js"></script>
+</body>
+
+</html>
